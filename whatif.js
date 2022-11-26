@@ -1,5 +1,11 @@
 function isTwodigitOdd(number) {
-
+    if (number % 2 === 0) {
+        return false;
+    } else if (`${number}`.length !== 2) {
+            return false;
+        } else {
+            return true
+        }
 }
 
 function hasAccess(user, usersGroups, fileOwner, writableByOwner, fileGroup, writableByGroup, writableByOthers, sudoMode) {

@@ -1,5 +1,5 @@
 function isTwodigitOdd(number) {
-
+    return number % 2 === 1 && `${number}`.length === 2
 }
 
 function hasAccess(user, usersGroups, fileOwner, writableByOwner, fileGroup, writableByGroup, writableByOthers, sudoMode) {
